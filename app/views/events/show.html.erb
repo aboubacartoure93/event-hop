@@ -1,2 +1,46 @@
-<h1>Events#show</h1>
-<p>Find me in app/views/events/show.html.erb</p>
+<div class="event">
+	<div class="pagetitle">
+		<h1><%= @place.name %></h1>
+	</div>
+
+	<div class="eventdescription">
+		<p><%= @event.description %></p>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="table">
+		<div class="row">
+			<div class="col-md-4">
+				<h3>People Going!</h3>
+				<% @event.users.each do |user| %>
+					<div class="attending"> <%= user.email %> </div>
+					<hr>
+				<% end %>
+				<%= render 'join_eventform' %>
+			</div>
+			
+			<div class="col-md-8">
+				<div class="gmaps">
+					<div style="width: 600px" center>
+						<div id="map" style="width: 100%; height: 400px"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="table">
+		<div class="row">
+			<div class="col-md-1"></div>
+		<!-- Shows all the posts for this event --> 
+		<div class="col-md-10">
+			<%= render 'form' %>
+		</div>
+		<!-- Shows all the posts for this event --> 
+		</div>
+	</div>
+</div>

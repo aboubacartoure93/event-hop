@@ -4,8 +4,12 @@ one:
   name: MyString
   address: MyString
   zipcode: 1
+  website: MyString
+  description: MyString
 
 two:
   name: MyString
   address: MyString
   zipcode: 1
+  website: MyString
+  description: MyString

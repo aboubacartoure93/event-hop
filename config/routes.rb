@@ -1,9 +1,19 @@
 Rails.application.routes.draw do
 
-
   devise_for :users
-  root 'home#show'
 
-  get 'choose', to: 'events#choose'
+  root 'places#index'
+
+  resources :places do
+  	resources :events, shallow: true do
+  		member do
+  			post 'join'
+        delete 'leave'
+  		end
+  		resources :posts, shallow: true, only:[:create]
+  	end
+  end
+
+  resources :users, only: [:show]
 
 end

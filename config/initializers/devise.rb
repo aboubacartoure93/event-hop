@@ -6,13 +6,14 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` on Rails 4+ applications as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '24e6a3b66b0d37c39b02a0ded7a4265f7d42da075a0e4545c81593e6fc72f712aa0b712f03941666d4487fd6f00a181cdb0e0787136999ef4ceb63e027194913'
+  # config.secret_key = '3a08b2b428646bd39e22540f3e5ea450c0be219a5d6708d0915341a53e0ff090843e4735874923c2b93710f499dde3c468ab519f101aa901a98812179c58c226'
+  config.secret_key = '523106c1e7f168049923988be38a0fad4f446ee7a2a8c098ad5163cc9c0749b1fc60b8429d112372bc3173e65e20deeb4329e5317e0b522320f8b23c6fd3431e'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'change here'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -99,7 +100,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '71296e0d0af1287b9aba05b3f7b06652b22fefbea919f87373562f1058b98c55e310f04fb292eb70fefa1064e75009031c69c9afc5e56c481b7620183aa31a73'
+  # config.pepper = 'e0592e8feec8a18cfae9072c502d37227ada8f89059f98ef7ad38a5b43baefb5e4a9fe68950088116689a57d979c157819f1b76e30dcced886cf2f7cd94e4293'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
