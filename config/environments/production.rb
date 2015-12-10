@@ -80,7 +80,7 @@ Rails.application.configure do
 
   config.serve_static_assets = true
 
-  config.action_mailer.default_url_options = { :host => "http://leah-eventhop.herokuapp.com" }
+  config.action_mailer.default_url_options = { :host => "https://eventhup.herokuapp.com/" }
 
   # config/environments/production.rb
   config.paperclip_defaults = {
